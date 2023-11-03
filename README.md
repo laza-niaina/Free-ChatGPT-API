@@ -6,7 +6,7 @@ This Free ChatGPT API allows you to use the text generation model interactively.
 ### Endpoint
 The endpoint for this API is:
 ```
-https://gpt-api-laza.onrender.com/v1/completions
+https://gpt-api-laza.onrender.com/v1/chat/completions
 ```
 
 ### Request
@@ -26,7 +26,8 @@ curl -X POST -H "Content-Type: application/json" -d '{
             "content": "Hello, this is a test"
         }
     ]
-}'https://gpt-api-laza.onrender.com/v1/completions'
+}' https://gpt-api-laza.onrender.com/v1/chat/completions
+
 ```
 
 ### Image Generation
@@ -50,7 +51,8 @@ curl -X POST -H "Content-Type: application/json" -d '{
         }
     ],
     "messages": "Elon musk"
-}'https://gpt-api-laza.onrender.com/v1/completions'
+}' https://gpt-api-laza.onrender.com/v1/chat/completions
+
 ```
 
 ### Response
