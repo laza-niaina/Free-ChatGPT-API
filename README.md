@@ -26,7 +26,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
             "content": "Hello, this is a test"
         }
     ]
-}'https://gpt-api-laza.onrender.com/v1/completions
+}'https://gpt-api-laza.onrender.com/v1/completions'
 ```
 
 ### Image Generation
@@ -50,7 +50,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
         }
     ],
     "messages": "Elon musk"
-}'https://gpt-api-laza.onrender.com/v1/completions
+}'https://gpt-api-laza.onrender.com/v1/completions'
 ```
 
 ### Response
