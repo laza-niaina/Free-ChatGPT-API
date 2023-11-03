@@ -1,45 +1,45 @@
-## API ChatGPT Gratuit
+## Free ChatGPT API
 
 ### Introduction
-Cette API ChatGPT Gratuit permet d'utiliser le modèle de génération de texte de manière interactive. Vous pouvez l'utiliser pour créer des chatbots, des assistants virtuels ou d'autres applications de génération de texte.
+This Free ChatGPT API allows you to use the text generation model interactively. You can use it to create chatbots, virtual assistants, or other text generation applications.
 
 ### Endpoint
-Le point de terminaison de cette API est :
+The endpoint for this API is:
 ```
 https://gpt-api-laza.onrender.com/v1/completions
 ```
 
-### Requête
-La requête doit être de type `POST` et doit inclure les paramètres suivants :
+### Request
+The request must be of type `POST` and must include the following parameters:
 
-1. `type`: Ce paramètre spécifie le type de conversation. Dans cet exemple, le type est défini sur "chat".
+1. `type`: This parameter specifies the type of conversation. In this example, the type is set to "chat".
 
-2. `content`: Ce paramètre correspond au contenu de la conversation. Il doit être un tableau d'objets avec les paires clé-valeur `from` et `content`. Dans cet exemple, il y a un seul objet avec les valeurs `from: "you"` et `content: "Hello, ceci est un test"`.
+2. `content`: This parameter corresponds to the content of the conversation. It must be an array of objects with the key-value pairs `from` and `content`. In this example, there is only one object with the values `from: "you"` and `content: "Hello, this is a test"`.
 
-#### Exemple de Requête
+#### Example Request
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
     "type": "chat",
     "content": [
         {
             "from": "you",
-            "content": "Hello, ceci est une teste"
+            "content": "Hello, this is a test"
         }
     ]
-}' https://gpt-api-laza.onrender.com/v1/completions
+}'https://gpt-api-laza.onrender.com/v1/completions
 ```
 
-### Génération d'Image
+### Image Generation
 
-Pour générer une image, vous pouvez passer les paramètres suivants :
+To generate an image, you can pass the following parameters:
 
-1. `type`: Ce paramètre doit être défini sur "image" pour générer une image spécifique.
+1. `type`: This parameter must be set to "image" to generate a specific image.
 
-2. `content`: Ce paramètre correspond au contenu de la conversation pour la génération de l'image. Il doit être un objet avec les paires clé-valeur `from` et `content`. Dans cet exemple, il y a un seul objet avec les valeurs `from: "you"` et `content: "Elon musk"`.
+2. `content`: This parameter corresponds to the content of the conversation for image generation. It must be an object with the key-value pairs `from` and `content`. In this example, there is only one object with the values `from: "you"` and `content: "Elon musk"`.
 
-3. `messages`: Ce paramètre spécifie les messages qui accompagnent la génération d'image. Dans cet exemple, le message est "Elon musk".
+3. `messages`: This parameter specifies the messages that accompany the image generation. In this example, the message is "Elon musk".
 
-#### Exemple de Requête pour la Génération d'Image
+#### Example Request for Image Generation
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
     "type": "image",
@@ -50,11 +50,12 @@ curl -X POST -H "Content-Type: application/json" -d '{
         }
     ],
     "messages": "Elon musk"
-}' https://gpt-api-laza.onrender.com/v1/completions
+}'https://gpt-api-laza.onrender.com/v1/completions
 ```
 
-### Réponse
-La réponse de l'API sera un objet JSON
+### Response
+The response from the API will be a JSON object
 
-### Auteur
-Email: <a href="mailto:lazaniaina13@gmail.com">Laza</a>
+### Author
+Email: <a href="mailto:lazaniaina13@gmail.com">Laza Niaina</a>
+Facebook:  <a href="https://www.facebook.com/lazaniaina.r">Laza</a>
