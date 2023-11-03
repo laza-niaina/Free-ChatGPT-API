@@ -58,4 +58,5 @@ The response from the API will be a JSON object
 
 ### Author
 Email: <a href="mailto:lazaniaina13@gmail.com">Laza Niaina</a>
+
 Facebook:  <a href="https://www.facebook.com/lazaniaina.r">Laza</a>
